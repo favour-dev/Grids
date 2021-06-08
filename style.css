@@ -7,9 +7,23 @@
 .navigation{
     display: grid;
     grid-template-columns:auto auto;
+    /* background: blue; */
 }
 .right-nav{
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: 67px;
+    background: white;
+    width: 100%;
+    height: 0;
+}
+li{
+    border: 2px solid transparent;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.show-nav-dropdown{
+    height: max-content;
 }
 .icon{
     display:grid;
@@ -49,6 +63,7 @@ input{
     padding: 10px 10px;
     margin-top: 20px;
     font-size: large;
+    outline: none;
 }
 .get-button{
     background: blue;
@@ -60,6 +75,10 @@ input{
 a{
     text-decoration: none;
 }
+.para p{
+    font-size: 2.5vh;
+}
+
 @media(min-width:700px) {
     .icon{
         display: none;
@@ -69,13 +88,27 @@ a{
         grid-template-columns: auto auto;
     }
     .right-nav{
-        display: grid;
+        /* display: grid;
         grid-template-columns: auto auto auto auto auto auto auto;
-        align-content: center;
+        align-content: center; */
+        /* position: absolute; */
+        /* top: 67px; */
+        /* background: blue; */
+        /* width: 100%; */
+        /* height: 0; */
+        position: unset;
+        top: 67px;
+        background: transparent;
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-left: auto;
+        gap: 30px;
+        margin-top: 20px;
     }
     li{
         list-style-type: none;
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
     .content{
         display: grid;
@@ -83,12 +116,16 @@ a{
         margin-top: 50px;
     }
     p{
-        font-size: 5vh;
-        width: 80%;
+        font-size:4vh;
+        width: 70%;
         padding-top: 15px;
     }
     h2{
         font-size: 8vh;
         padding-top: 15px;
     }
+    .para p{
+        font-size: 3vh;
+    }
+    
 }
