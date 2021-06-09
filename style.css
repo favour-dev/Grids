@@ -21,6 +21,7 @@ li{
     border: 2px solid transparent;
     padding-top: 10px;
     padding-left: 40px;
+    white-space: nowrap;
 }
 .show-nav-dropdown{
     height: max-content;
